@@ -1,0 +1,8 @@
+<% @contact.each do |contact| %>
+    <footer class=footer><%= contact[:name] %></footer>
+    <footer class=footer><%=contact[:address] %></footer>
+    <footer class=footer><%=contact[:email] %></footer>
+    <footer class=footer><%=contact[:phone] %></footer>
+    <footer class=footer><%=contact[:by] %></footer>
+   
+<% end %>

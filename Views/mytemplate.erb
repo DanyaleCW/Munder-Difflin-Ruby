@@ -1,0 +1,8 @@
+
+<% @id.each do |id| %>
+    <h1><%= id[:name] %></h1>
+    <h3><%=id[:position] %></h3>
+    <h4><%=id[:facts] %></h4>
+    <div><img src="<%=id[:image]%>" height="300" 
+    width="300"></div>
+<% end %>

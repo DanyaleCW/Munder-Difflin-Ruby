@@ -10,8 +10,8 @@ get '/' do
 end
 
 get '/about' do
-  "One two three four five six seven eight Sclemeel schlemazel hasenfeffer incorporatedFish don't fry in the kitchen and beans don't burn on the grill. Took a whole lotta tryin' just to get up that hill. Well we're movin' on up to the east side to a deluxe apartment in the sky."
-end	
+  "One two three four five six seven eight Sclemeel schlemazel hasenfeffer incorporated. Fish don't fry in the kitchen and beans don't burn on the grill. Took a whole lotta tryin' just to get up that hill. Well we're movin' on up to the east side to a deluxe apartment in the sky."
+end
 
 get '/contact' do
   @contact = [{name:
@@ -23,7 +23,7 @@ get '/contact' do
 end
 
 
-get '/staff' do 
+get '/staff' do
   'Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.'
 end
 
@@ -40,16 +40,16 @@ get '/staffinfo' do
 
 
 
-# get '/staff/:id' do  
+# get '/staff/:id' do
 #     # if params[:id] == "Shuri"
 #     #     erb :shuri
 #     # elsif params[:id] == "Okoye"
 #     #     erb :okoye
 #     # elsif params[:id] == "Nakia"
-#     #     erb :nakia 
+#     #     erb :nakia
 #     # elsif params[:id] == "Xoliswa"
 #     #     erb :xoliswa
-#     # else 
+#     # else
 #     #     "That person was fired for only drinking cream and sugar"
 #     # end
 # end

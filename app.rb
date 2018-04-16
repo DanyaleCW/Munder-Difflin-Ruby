@@ -2,29 +2,29 @@ require 'sinatra'
 require 'colorator'
 require 'shotgun'
 
-set :public_folder, File.dirname(__FILE__) 
+set :public_folder, File.dirname(__FILE__)
 
 get '/' do
-    @main = [{name: "The Munder Difflin Paper Company"}, {title: "Highend paper for people with exceptional taste."}, {mission: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}]
+  @main = [{name: 'The Munder Difflin Paper Company'}, {title: "Highend paper for people with exceptional taste."}, {mission: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}] 
     erb :mytemplate1, :layout => :mylayout
 end
 
 get '/about' do
-    "One two three four five six seven eight Sclemeel schlemazel hasenfeffer incorporatedFish don't fry in the kitchen and beans don't burn on the grill. Took a whole lotta tryin' just to get up that hill. Well we're movin' on up to the east side to a deluxe apartment in the sky."
+  "One two three four five six seven eight Sclemeel schlemazel hasenfeffer incorporatedFish don't fry in the kitchen and beans don't burn on the grill. Took a whole lotta tryin' just to get up that hill. Well we're movin' on up to the east side to a deluxe apartment in the sky."
 end	
 
 get '/contact' do
-    @contact = [{name:
-    "2018 Fine Paper Inc.,"}, {address: "6789 Confetti Way, Papier-Mache, USA 12345"}, 
-    {email: "Email: difflin@gmail.com"},
-    {phone:"Phone: 808-867-5309"},
-    {by: "Coded and Designed by: Code. Design. Surf."}]
-    erb :contact, :layout=> :mylayout
+  @contact = [{name:
+  "2018 Fine Paper Inc.,"},
+  {email:'Email: difflin@gmail.com'},
+  {phone:"Phone: 808-867-5309"},
+  {by: "Coded and Designed by: Code. Design. Surf."}]
+  erb :contact, :layout=> :mylayout
 end
 
 
 get '/staff' do 
-    "Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring."
+  'Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.'
 end
 
 
@@ -50,7 +50,6 @@ get '/staffinfo' do
 #     # elsif params[:id] == "Xoliswa"
 #     #     erb :xoliswa
 #     # else 
-#     #     "That person was fired for only drinking cream and sugar"  
+#     #     "That person was fired for only drinking cream and sugar"
 #     # end
-      
-# end  
+# end

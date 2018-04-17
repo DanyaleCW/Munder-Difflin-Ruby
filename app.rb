@@ -1,5 +1,8 @@
 require 'sinatra'
+<<<<<<< HEAD
 
+=======
+>>>>>>> 649a3b4e245200053fe3ce25697d98ef64664e34
 
 set :public_folder, File.dirname(__FILE__)
 
@@ -36,19 +39,3 @@ get '/staffinfo' do
     {name: "Nakia", position: "COO of Magic", facts: "In her spare time Nakia works to try to end human trafficking.", image: "https://sheleadsafrica.org/wp-content/uploads/2016/02/Screen-Shot-2016-02-08-at-4.03.26-AM-e1454925587634.png"}]
     erb :mytemplate, :layout => :mylayout1
 end
-
-
-
-# get '/staff/:id' do
-#     # if params[:id] == "Shuri"
-#     #     erb :shuri
-#     # elsif params[:id] == "Okoye"
-#     #     erb :okoye
-#     # elsif params[:id] == "Nakia"
-#     #     erb :nakia
-#     # elsif params[:id] == "Xoliswa"
-#     #     erb :xoliswa
-#     # else
-#     #     "That person was fired for only drinking cream and sugar"
-#     # end
-# end 

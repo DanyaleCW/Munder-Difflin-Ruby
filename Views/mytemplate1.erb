@@ -1,5 +1,4 @@
-<% @main.each do |main| %>
-    <h1><%= main[:name] %></h1>
-    <h2><%=main[:title] %></h2>
-    <h3><%=main[:mission] %></h3>
-#<% end %>
+
+    <h1><%= @main[0][:name] %></h1>
+    <h2><%= @main[1][:title] %></h2>
+    <h3><%= @main[2][:mission] %></h3>

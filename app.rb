@@ -5,7 +5,7 @@ require 'shotgun'
 set :public_folder, File.dirname(__FILE__)
 
 get '/' do
-  @main = [{name: 'The Munder Difflin Paper Company'}, {title: "Highend paper for people with exceptional taste."}, {mission: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}] 
+    @main = [{name: 'The Munder Difflin Paper Company'}, {title: "Highend paper for people with exceptional taste."}, {mission: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}]   
     erb :mytemplate1, :layout => :mylayout
 end
 
@@ -35,8 +35,8 @@ get '/staffinfo' do
     {name: "Xoliswa", position: "Director of Entertainment", facts: "When not planning amazing staff birthday parties
     and 5k's, she is in the ring starring as a semi-professional named Xoliswa.", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsguUfl8nHMvta8ZWVgOg32UQs-BMQD98jBtrF3AgOVIEmZ2hzmg"},
     {name: "Nakia", position: "COO of Magic", facts: "In her spare time Nakia works to try to end human trafficking.", image: "https://sheleadsafrica.org/wp-content/uploads/2016/02/Screen-Shot-2016-02-08-at-4.03.26-AM-e1454925587634.png"}]
-    erb :mytemplate, :layout => :mylayout
-    end
+    erb :mytemplate, :layout => :mylayout1
+end
 
 
 
@@ -52,4 +52,4 @@ get '/staffinfo' do
 #     # else
 #     #     "That person was fired for only drinking cream and sugar"
 #     # end
-# end
+# end 
